@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+	left: 0;
+}
+body{
+	width: auto;
+	margin-left: auto;
+  margin-right: auto;
+  background: #444444;
+}
+.header{
+	width: 100%;
+  height: 55px;
+  background-color: #888;
+	display: flex;
+	justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #1a1a1a;
+}
+.logo{
+  height: 100%;
+  margin-left: 20px;
+}
+
+main{
+	width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_1{
+  width: 100%;
+  height: 60%;
+  margin-top: 50px;
+  display: flex;
+}
+.info{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+h1{
+  color: white;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.startBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 35%;
+  height: 40px;
+  border: 2px solid #444;
+  background-position: 0;
+  color: white;
+  font-size: 30px;
+  border-radius: 30px;
+  background: #ffff00ba;
+
+}
+.starIMG{
+  width: 60%;
+}
+.container_3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 50px;
+  font-size: 30px;
+  color: white;
+}
+
+.items{
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+}
+.items img{
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+  background-size: cover;
+  border: 3px solid white;
+  background: white;
+}
+.title{
+  width: 70%;
+}
+.title p{
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 200;
+}
+.container_2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+h2{
+  color: white;
+  font-size: 35px;
+}
+.container_2 img{
+  width: 90vw;
+  margin-top: 20px;
+}
+.container_4{
+  margin-top: 30px;
+}
+h3{
+  font-size: 30px;
+  color: white;
+}
+h3 span{
+  color: black;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+  background-size: cover;
+  margin: 0 10px;
+}
+.vk{
+  background-image: url(./Start/vk.png);
+}
+.github{
+  background-image: url(./Start/github.png);
+}
+.telegram{
+  background-image: url(./Start/telegram.png);
+}

@@ -1,0 +1,54 @@
+
+.bcg_canvas{
+  margin: 0 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+.myCanvas{
+  height: 100%;
+  width: auto;
+  background-color:#eee;
+}
+.activeCanvas{
+  z-index: 10;
+}
+.container_sizeCanvas{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  align-items: center;
+}
+.container_mainCanvas{
+  margin-top: 3%;
+  background: #e0e0df9e;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.sizeCanvas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  background: #1D1D1D;
+  border: 2px solid #444;
+  font-size: 15px;
+  border-radius: 30px;
+  height: 30px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.activeSizeCanvas{
+  border: 2px solid yellow;
+  color: yellow;
+}
+.rotation{
+  transform: rotate(90deg);
+}

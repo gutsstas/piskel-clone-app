@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="860787367032-u56j6tb39mkud1g9ra413t4mgeqn4pg9.apps.googleusercontent.com">
+    <title>
+      <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./dist/image/header/piksel-logo_orig.png" alt="logo">
+      <div class="welcome"></div>
+      <img class="welcome-avatar opacity" src="">
+      <div class="g-signin2 signIn signInButton" data-onsuccess="onSignIn"></div>
+        <button class="signOut signOutButton opacity">Start</button>
+    </header>
+    <main>
+      <div class="container_1">
+        <div class="penSize">
+          <div class="size one activeSize">1</div>
+          <div class="size two">2</div>
+          <div class="size three">3</div>
+          <div class="size four">4</div>
+        </div>
+        <ul id="tools-container" class="tools">
+          <li class ="tool pen" data-title="Pen(P)"></li>
+          <li class ="tool picker" data-title="Picker Color(O)"></li>
+          <li class ="tool paint" data-title="Paint bucket tool(B)"></li>
+          <li class ="tool paintAll" data-title="Paint all pixels of the same color(A)"></li>
+          <li class ="tool rectangle" data-title="Rectangle tool(R)"></li>
+          <li class ="tool circle" data-title="Circle tool(C)"></li>
+          <li class ="tool eraser" data-title="Eraser tool(E)"></li>
+          <li class ="tool mirror" data-title="Vertical Mirror pen(V)"></li>
+          <li class ="tool stroke" data-title="Stroke tool(L)"></li>
+          <li class ="tool moves" data-title="Move tool(M)"></li>
+          <li class ="tool dithering" data-title="Dithering tool(T)"></li>
+          <li class ="tool lighten" data-title="Lighten(U)"></li>
+          <li class ="tool rotate" data-title="Rotation"></li>
+          <li class ="tool flip" data-title="Flip"></li>
+
+        </ul>
+        <div class="container_color">
+          <input type="color" name="color_1" id="colorOne" value="#4286f4">
+          <input type="color" name="color_1" id="colorTwo" value="#ffffff">
+        </div>
+      </div>
+      <div class="container_frames">
+        <div id="sortable" class="frames">
+          <div class="frame activeFrame">
+            <canvas class="frame_canvas" width="320" height="320" style="background: #525252"></canvas>
+            <div class="frameButton delete" id="delete"></div>
+            <div class="frameButton copy" id="copy"></div>
+            <div class="frameButton move"></div>
+          </div>
+        </div>
+        <button id="creat_frame" class="creat_frame">Add new frame</i></button>
+      </div>
+      <div class="bcg_canvas">
+        <div class="container_mainCanvas">
+          <canvas class="myCanvas activeCanvas" width="320" height="320" style="background: #525252"></canvas>
+        </div>
+
+      </div>
+      <div class="preview">
+        <canvas class="previewCanvas" width="320" height="320" style="background: #525252"></canvas>
+        <div class="containerRange">
+          <div class="valueRange">0</div>
+          <input class="previewInput range" type="range" min="0" max="24" step="1" value="0">
+        </div>
+        <div class="buttonPreview">
+          <button id="fullScreen"></button>
+        </div>
+        <div class="info">
+          <div class="cursorCords">0 : 0</div>
+        <div class="sizeCanvasPreview">32x32</div>
+        </div>
+        <div class="container_sizeCanvas">
+          <div class="sizeCanvas 32x32 activeSizeCanvas">32x32</div>
+          <div class="sizeCanvas 64x64">64x64</div>
+          <div class="sizeCanvas 128x128">128x128</div>
+        </div>
+        <div class="gifBtn">
+          <button class="gif">GIF</button><br>
+          <a class="save" download="New Piskel"></a>
+        </div>
+        <button class="clearLocalStorage">Clear LocalStorage</button>
+
+        </div>
+
+    </main>
+
+  </body>
+</html>

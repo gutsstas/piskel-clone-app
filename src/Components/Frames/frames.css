@@ -1,0 +1,228 @@
+.container_frames{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  height: 90vh;
+  width: 175px;
+  overflow-y: auto;
+}
+.frames{
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.frame{
+	width: 130px;
+  height: 130px;
+	border: 2px solid black;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 13%;
+}
+.activeFrame{
+  border: 2px solid yellow;
+  border-radius: 13%;
+}
+.frame_canvas{
+  width: 100%;
+  height: 100%;
+  border-radius: 13%;
+}
+
+.delete{
+  position: absolute;
+  left: 95px;
+  top: 0;
+  /* background: #525252; */
+  background-image: url(../../../dist/image/frame/frame-recyclebin-white@2x.png);
+  background-size: cover;
+  border: 0;
+}
+.number{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  background: aqua;
+
+}
+.move{
+  position: absolute;
+  left: 0;
+  top: 95px;
+  width: 35px;
+  height: 35px;
+  /* background: #525252; */
+  background-image: url(../../../dist/image/frame/frame-dragndrop-white@2x.png);
+  background-size: cover;
+  border: 0;
+}
+.copy{
+  position: absolute;
+  left: 95px;
+  top: 95px;
+  /* background: #525252; */
+  background-image: url(../../../dist/image/frame/frame-duplicate-white@2x.png);
+  background-size: cover;
+  border: 0;
+}
+.frameButton{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.frame button .fas{
+  margin-left: 0;
+}
+.creat_frame{
+  width: 130px;
+  height: 50px;
+  margin-top: 20px;
+  z-index: 2;
+  background: #1D1D1D;
+  background-image: url(../../../dist/image/frame/frame-plus-white@2x.png);
+  border: 2px solid #444;
+  background-repeat: no-repeat;
+  background-position: 0;
+  color: white;
+  padding-left: 45px;
+  font-size: 15px;
+  border-radius: 30px;
+}
+.container_1{
+  margin-top: 50px;
+  display: flex;
+  width: 140px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+}
+.penSize{
+  display: flex;
+  margin-left: 10px;
+}
+.size{
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  border: 2px solid #444;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+}
+.tools{
+  display: block;
+  width: 100%;
+  float: left;
+  list-style-type: none;
+}
+.tool{
+  width: 46px;
+  height: 46px;
+  position: relative;
+  cursor: pointer;
+  margin: 1px;
+  float: left;
+  border: 2px solid #3a3a3a;
+  background-size: cover;
+  border-radius: 13px;
+}
+.container_color{
+  margin-top: 25px;
+}
+input[type="color" i]::-webkit-color-swatch-wrapper {
+  padding: 0;
+  width: 46px;
+  height: 46px;
+  position: relative;
+
+}
+#colorOne,
+#colorTwo{
+  border: 0 solid #3a3a3a;
+  cursor: pointer;
+}
+#colorOne{
+  margin-left: 16px;
+  z-index: 5;
+}
+#colorTwo{
+  margin-left: -12px;
+  position: relative;
+  top: 21px
+}
+.activeTool{
+  border: 2px solid yellow;
+}
+.activeSize{
+  border: 2px solid yellow;
+  color: yellow;
+}
+
+.pen{
+  background-image: url(../../../dist/image/tools/tool-pen@2x.png);
+}
+.picker{
+  background-image: url(../../../dist/image/tools/tool-colorpicker@2x.png);
+}
+.paint{
+  background-image: url(../../../dist/image/tools/tool-paint-bucket@2x.png);
+}
+.paintAll{
+  background-image: url(../../../dist/image/tools/tool-colorswap@2x.png);
+}
+.rectangle{
+  background-image: url(../../../dist/image/tools/tool-rectangle@2x.png);
+}
+.circle{
+  background-image: url(../../../dist/image/tools/tool-circle@2x.png);
+}
+.eraser{
+  background-image: url(../../../dist/image/tools/tool-eraser@2x.png);
+}
+.mirror{
+  background-image: url(../../../dist/image/tools/tool-vertical-mirror-pen@2x.png);
+}
+.stroke{
+  background-image: url(../../../dist/image/tools/tool-stroke@2x.png);
+}
+.moves{
+  background-image: url(../../../dist/image/tools/tool-move@2x.png);
+}
+.dithering{
+  background-image: url(../../../dist/image/tools/tool-dithering@2x.png);
+}
+.lighten{
+  background-image: url(../../../dist/image/tools/tool-lighten@2x.png);
+}
+.rotate{
+  background-image: url(../../../dist/image/tools/tool-rotate@2x.png);
+}
+.flip{
+  background-image: url(../../../dist/image/tools/tool-flip@2x.png);
+}
+li[data-title]:hover:after {
+  content: attr(data-title);
+  padding: 4px 8px;
+  color: white;
+  position: absolute;
+  left: 120%;
+  top: 25%;
+  z-index: 20;
+  white-space: nowrap;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 1px 1px 4px #222;
+  -webkit-box-shadow: 1px 1px 4px #222;
+  box-shadow: 1px 1px 4px #222;
+  background: #1D1D1D;
+  border: 2px solid #444;
+}
